@@ -17,64 +17,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fZi-Bi-lAr">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-Sa-vHk">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0O6-aP-SAI">
-                                    <size key="itemSize" width="145" height="151"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AlbumCollectionViewCell" reuseIdentifier="cell" id="x8C-l1-t5W" customClass="AlbumCollectionViewCell" customModule="MusicAlbum" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="52Z-MM-91D">
-                                            <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xn6-aJ-mB4">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IU's album " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kX-my-Rsk">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="IlX-JZ-qge"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fZi-Bi-lAr">
+                                        <rect key="frame" x="0.0" y="100" width="393" height="659"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0O6-aP-SAI">
+                                            <size key="itemSize" width="145" height="151"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AlbumCollectionViewCell" reuseIdentifier="cell" id="x8C-l1-t5W" customClass="AlbumCollectionViewCell" customModule="MusicAlbum" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="52Z-MM-91D">
                                                     <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSU-I0-SZU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="145" height="130.66666666666666"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIk-7e-caP">
+                                                            <rect key="frame" x="10" y="10" width="122" height="104"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx5-0r-8ka">
-                                                            <rect key="frame" x="0.0" y="130.66666666666666" width="145" height="20.333333333333343"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQe-Cr-2Zi">
+                                                            <rect key="frame" x="51" y="122" width="42" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="xn6-aJ-mB4" firstAttribute="leading" secondItem="52Z-MM-91D" secondAttribute="leading" id="CN7-gH-qjO"/>
-                                                <constraint firstItem="xn6-aJ-mB4" firstAttribute="top" secondItem="52Z-MM-91D" secondAttribute="top" id="LWP-oY-vNQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="xn6-aJ-mB4" secondAttribute="bottom" id="wTw-eK-Ano"/>
-                                                <constraint firstAttribute="trailing" secondItem="xn6-aJ-mB4" secondAttribute="trailing" id="z2B-0L-9Fw"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                        <size key="customSize" width="145" height="151"/>
-                                        <connections>
-                                            <outlet property="albumImage" destination="dSU-I0-SZU" id="d68-54-BNL"/>
-                                            <outlet property="albumName" destination="Vx5-0r-8ka" id="mye-iQ-UsF"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </collectionViewCellContentView>
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                <size key="customSize" width="145" height="151"/>
+                                                <connections>
+                                                    <outlet property="albumImage" destination="GIk-7e-caP" id="QDZ-aa-6Zp"/>
+                                                    <outlet property="albumName" destination="QQe-Cr-2Zi" id="mhI-lQ-9ez"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fZi-Bi-lAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="070-PM-TuS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fZi-Bi-lAr" secondAttribute="trailing" id="C8z-Gp-a3Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fZi-Bi-lAr" secondAttribute="bottom" id="Gva-4J-6nO"/>
-                            <constraint firstItem="fZi-Bi-lAr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sxp-Nj-V0g"/>
+                            <constraint firstItem="9S6-Sa-vHk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="01l-HK-Soh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="9S6-Sa-vHk" secondAttribute="top" id="Bl1-ac-bEi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9S6-Sa-vHk" secondAttribute="trailing" id="JFt-qs-f55"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9S6-Sa-vHk" secondAttribute="bottom" id="gvK-T3-tzh"/>
                         </constraints>
                     </view>
                     <connections>

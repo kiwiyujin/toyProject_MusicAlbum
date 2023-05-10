@@ -31,33 +31,30 @@ extension AlbumViewController: UICollectionViewDataSource {
         
         cell.albumImage.image = UIImage(named: albumName[indexPath.row])
         cell.albumName.text = albumName[indexPath.row]
+      
+        let deviceWidth = UIScreen.main.bounds.width
+        let imageWidth = deviceWidth / 3
+        let imageHeight = imageWidth
         
-//        if indexPath.row == 3 {
-//            cell.backgroundColor = UIColor.darkGray
-//        }
-//        else if indexPath.row % 2 == 1 {
-//            cell.layer.borderWidth = 2.0
-//            cell.layer.borderColor = UIColor.systemRed.cgColor
-//        }
-//
+        cell.height = imageWidth
+        cell.width = imageHeight
         return cell
     }
 }
 
 extension AlbumViewController: UICollectionViewDelegateFlowLayout {
+    // cell의 높이와 폭을 설정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let deviceWidth = UIScreen.main.bounds.width
-        print(deviceWidth)
-        var imageWidth = deviceWidth / 3
-        var imageHeight = imageWidth
+        let imageWidth = deviceWidth / 3
+        let imageHeight = imageWidth
         
         return CGSize(width: imageWidth , height: imageHeight)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        print(cell?.bounds.width)
-        print(cell?.bounds.height)
+        
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
     }
+    
 }

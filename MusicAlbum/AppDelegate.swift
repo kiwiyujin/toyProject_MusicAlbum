@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MusicAlbum
-//
-//  Created by Yujin on 2023/04/05.
-//
-
 import UIKit
 
 @main
