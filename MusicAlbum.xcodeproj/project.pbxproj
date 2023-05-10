@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A795E1029E664B00011B4B9 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A795E0F29E664B00011B4B9 /* AlbumCollectionViewCell.swift */; };
 		6AD8584729DD222500FF70DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8584629DD222500FF70DD /* AppDelegate.swift */; };
 		6AD8584929DD222500FF70DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8584829DD222500FF70DD /* SceneDelegate.swift */; };
 		6AD8584B29DD222500FF70DD /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8584A29DD222500FF70DD /* AlbumViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A795E0F29E664B00011B4B9 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		6AD8584329DD222500FF70DD /* MusicAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD8584629DD222500FF70DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AD8584829DD222500FF70DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				6AD8584629DD222500FF70DD /* AppDelegate.swift */,
 				6AD8584829DD222500FF70DD /* SceneDelegate.swift */,
 				6AD8584A29DD222500FF70DD /* AlbumViewController.swift */,
+				6A795E0F29E664B00011B4B9 /* AlbumCollectionViewCell.swift */,
 				6AD8584C29DD222500FF70DD /* Main.storyboard */,
 				6AD8584F29DD222600FF70DD /* Assets.xcassets */,
 				6AD8585129DD222600FF70DD /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				6AD8584B29DD222500FF70DD /* AlbumViewController.swift in Sources */,
 				6AD8584729DD222500FF70DD /* AppDelegate.swift in Sources */,
+				6A795E1029E664B00011B4B9 /* AlbumCollectionViewCell.swift in Sources */,
 				6AD8584929DD222500FF70DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

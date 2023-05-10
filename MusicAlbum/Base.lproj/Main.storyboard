@@ -21,20 +21,49 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0O6-aP-SAI">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="145" height="151"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="x8C-l1-t5W">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AlbumCollectionViewCell" reuseIdentifier="cell" id="x8C-l1-t5W" customClass="AlbumCollectionViewCell" customModule="MusicAlbum" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="52Z-MM-91D">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xn6-aJ-mB4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="151"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSU-I0-SZU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="145" height="130.66666666666666"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx5-0r-8ka">
+                                                            <rect key="frame" x="0.0" y="130.66666666666666" width="145" height="20.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="xn6-aJ-mB4" firstAttribute="leading" secondItem="52Z-MM-91D" secondAttribute="leading" id="CN7-gH-qjO"/>
+                                                <constraint firstItem="xn6-aJ-mB4" firstAttribute="top" secondItem="52Z-MM-91D" secondAttribute="top" id="LWP-oY-vNQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="xn6-aJ-mB4" secondAttribute="bottom" id="wTw-eK-Ano"/>
+                                                <constraint firstAttribute="trailing" secondItem="xn6-aJ-mB4" secondAttribute="trailing" id="z2B-0L-9Fw"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                        <size key="customSize" width="145" height="151"/>
+                                        <connections>
+                                            <outlet property="albumImage" destination="dSU-I0-SZU" id="d68-54-BNL"/>
+                                            <outlet property="albumName" destination="Vx5-0r-8ka" id="mye-iQ-UsF"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
